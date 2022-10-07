@@ -54,7 +54,7 @@ You can follow same procedure in the official  AWS document [Getting started wit
 
 5. To delete the EKS clsuter 
    ```sh 
-   eksctl delete cluster siddhant --region ap-south-1
+   eksctl delete cluster siddhant-cluster --region ap-south-1
    ```
    
 6. Validate your cluster using by creating by checking nodes and by creating a pod 
