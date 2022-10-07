@@ -29,13 +29,12 @@ You can follow same procedure in the official  AWS document [Getting started wit
   
 3. Create an IAM Role and attache it to EC2 instance    
    `Note: create IAM user with programmatic access if your bootstrap system is outside of AWS`   
-   IAM user should have access to   
-   IAM   
+   IAM user should have access to (can give full admin access for own setup and run aws configure command )   
    EC2   
    VPC    
    CloudFormation
    ```sh
-   aws configure
+   aws configure 
    ```
 
 4. Create your cluster and nodes 
@@ -48,14 +47,14 @@ You can follow same procedure in the official  AWS document [Getting started wit
    --zones <AZ-1>,<AZ-2>
    
    example:
-   eksctl create cluster --name ritesh-cluster \
+   eksctl create cluster --name siddhant-cluster \
       --region ap-south-1 \
    --node-type t2.small \
     ```
 
 5. To delete the EKS clsuter 
    ```sh 
-   eksctl delete cluster ritesh --region ap-south-1
+   eksctl delete cluster siddhant --region ap-south-1
    ```
    
 6. Validate your cluster using by creating by checking nodes and by creating a pod 
