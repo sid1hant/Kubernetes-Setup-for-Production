@@ -119,3 +119,13 @@ $ terraform init
 $ terraform plan
 $ terraform apply
 $ terraform destroy
+
+
+Glossary🔖:
+
+rs : Replicaset
+svc: Services
+svc/node/pod-id : It is the name of the particular pod/svc/node.
+pv: persistent volume
+pvc: persistent VolumeClaim
+HPA: Horizontal Pod Auto-Scaling
